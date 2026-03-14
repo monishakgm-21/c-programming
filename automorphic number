@@ -25,3 +25,24 @@ int main()
   }
     return 0;
 }
+#include <stdio.h>
+
+int main()
+{
+    int n, square;
+
+    scanf("%d",&n);
+
+    square = n * n;
+
+    if(square % 10 == n || square % 100 == n || square % 1000 == n)
+    {
+        printf("Automorphic");
+    }
+    else
+    {
+        printf("Not Automorphic");
+    }
+
+    return 0;
+}
