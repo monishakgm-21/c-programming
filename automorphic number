@@ -1,0 +1,27 @@
+/*a  original number is squared if last digit of that num is equal to original num*/
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+  int n,o,r,d=0,b;
+  scanf("%d",&n);
+  o=n;
+  while(n!=0)
+  {
+      r=n%10;
+      d++;
+      n=n/10;
+      
+  }
+  int a=o*o;
+  b=pow(10,d);
+  if(a%b==o)
+  {
+      printf("automorphic");
+  }
+  else
+  {
+      printf("not automorphic");
+  }
+    return 0;
+}
