@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    int n,sum=0;
+    scanf("%d",&n);
+    for(int i=1; i<=n; i++)
+    {
+        int ori=i,x=i,rev=0,r;
+        while(x!=0)
+        {
+            r=x%10;
+            rev=rev*10+r;
+            x=x/10;
+        }
+        if(ori==rev)
+        {
+            sum+=i;
+        }
+    }
+    printf("%d",sum);
+
+    return 0;
+}
