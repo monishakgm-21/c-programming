@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    int n,r,mul=1;
+    scanf("%d",&n);
+    while(n!=0)
+    {
+        r=n%10;
+        mul*=r;
+        n=n/10;
+    }
+    if(mul==0)
+    {
+        printf("invalid input");
+    }
+    else if(mul>0)
+    {
+        printf("%d",mul);
+    }
+    return 0;
+}
