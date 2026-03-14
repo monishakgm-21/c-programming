@@ -1,0 +1,30 @@
+
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+   int n,o,r,sum=0;
+   scanf("%d",&n);
+   o=n;
+   if(n<=0)
+   {
+       printf("not a positive input");
+       return 0;
+   }
+   while(n!=0)
+   {
+      r=n%10;
+      sum+=r;
+      n=n/10;
+   }
+   if(o%sum==0)
+   {
+       printf("harshad number");
+   }
+   else
+   {
+       printf("not a harshad number");
+   }
+
+    return 0;
+}
