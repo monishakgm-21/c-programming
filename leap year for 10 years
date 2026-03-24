@@ -1,0 +1,28 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int y,count=0,non;
+    scanf("%d",&y);
+    if((y%400==0) || (y%4==0 && y%100!=0))
+    {
+        printf("\nleap year");
+    }
+    else 
+    {
+        printf("\nnot a leap year");
+    }
+    for(int i=y+1; i<=y+10; i++)
+    {
+        if((i%400==0) || (i%4==0 && i%100!=0))
+        {
+          count++;  
+        }
+    }
+    printf("\nno of leap years=%d",count);
+    non=10-count;
+    printf("\nno of non leap years=%d",non);
+
+    return 0;
+}
